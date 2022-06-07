@@ -1,0 +1,158 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: sans-serif;
+font-size: 14px;
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+background-color: rgb(243, 243, 243);
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.instagram-wrapper {
+display: flex;
+align-items: center;
+justify-content: start;
+width: 60%;
+height: 100vh;
+}
+
+.instagram-phone {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+}
+
+.instagram-phone img {
+height: 50rem;
+}
+
+.instagram-continue {
+display: flex;
+align-items: center; 
+justify-content: space-around; 
+flex-direction: column;
+width: 50%;
+min-height: 34rem;
+}
+
+.group {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+background-color: #ffffff;
+width: 100%;
+padding: 1.3rem 0;
+border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+min-height: 19rem;
+}
+
+.instagram-logo {
+height: 3rem;
+}
+
+.profile-photo {
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.profile-photo img {
+height: 6rem;
+}
+
+.instagram-login {
+background-color: #0095f6;
+color: #ffffff;
+padding: 8px;
+border-radius: 4px;
+}
+
+.instagram-logout {
+color: #0095f6;
+margin-top: 1rem;
+}
+
+.not-account {
+color: rgb(160, 160, 160);
+}
+
+.link-blue {
+color: #0095f6;
+}
+
+.get-the-app {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+padding: 1.3rem 0;
+}
+
+.download {
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+align-items: center;
+padding: 1rem;
+}
+
+.app-download {
+height: 3rem;
+width: 10rem;
+background-size: cover;
+}
+
+.app-download:nth-child(1) {
+background-image: url('data:image/png;base64,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');
+}
+
+.app-download:nth-child(2) {
+background-image: url('https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png');
+}
+
+
+
+
+@media (max-width: 1024px) {
+.instagram-wrapper {
+    width: 90%;
+}
+}
+
+@media (max-width: 650px) {
+body {
+    background-color: #ffffff;
+}
+
+.instagram-wrapper {
+    width: 90%;
+}
+
+.instagram-phone {
+    display: none;
+}
+
+.instagram-continue {
+    width: 100%;
+}
+
+.group {
+    border: 1px solid transparent;
+}
+}
